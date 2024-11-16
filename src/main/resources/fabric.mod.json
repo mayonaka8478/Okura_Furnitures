@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "id": "examplemod",
+  "id": "okurafurnitures",
   "version": "${version}",
 
-  "name": "Example Mod",
-  "description": "This mod aims to help new BTA modders.",
+  "name": "Okura Furnitures",
+  "description": "BTA mod to add miscellaneous furniture, etc.",
   "authors": [
-    "Turnip Labs"
+    "mayonaka8478"
   ],
   "contact": {
     "homepage": "",
@@ -19,25 +19,29 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-			"turniplabs.examplemod.ExampleMod"
+			"mayonaka8478.okurafurnitures.OkuraFurnitures"
     ],
 		"beforeGameStart": [
-			"turniplabs.examplemod.ExampleMod"
+			"mayonaka8478.okurafurnitures.OkuraFurnitures"
 		],
 		"afterGameStart": [
-			"turniplabs.examplemod.ExampleMod"
+			"mayonaka8478.okurafurnitures.OkuraFurnitures"
 		],
 		"recipesReady": [
-			"turniplabs.examplemod.ExampleMod"
+			"mayonaka8478.okurafurnitures.ModRecipe"
+		],
+		"client": [
+			"mayonaka8478.okurafurnitures.OkuraFurnituresClient"
 		]
 	},
   "mixins": [
-      "examplemod.mixins.json"
+      "okurafurnitures.mixins.json"
   ],
 
   "depends": {
-		"minecraft": "^7.2-beta",
-    "fabricloader": ">=0.15.5"
+		"minecraft": "~7.2",
+    "fabricloader": ">=0.15.6-babric.6-bta",
+		"dragonfly": ">=1.6.0-7.2-0.1"
   },
   "suggests": {
   }
